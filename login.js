@@ -1,13 +1,18 @@
-
-let num=13 
-let count=0;
+function prime(number){
+let factor=0;
     for(let i=1;i<=num;i++){
-        if(num%i==0){
-            count++
+        if(number%i==0){
+            factor++
         }
     }
-if(count==2){
+if(factor==2){
+    return true;
+}
+return false;
+}
+let answer=prime(13);
+if(answer==true){
     console.log("number is prime");
 }else{
-    console.log("num is not prime");
+    console.log("number is not prime");
 }
