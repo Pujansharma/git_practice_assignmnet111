@@ -4,7 +4,6 @@ let factor=0;
         if(number%i==0){
             factor++
         }
-    }
 if(factor==2){
     return true;
 }
